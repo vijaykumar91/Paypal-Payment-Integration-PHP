@@ -2,15 +2,15 @@
 /*
  * PaypalExpress Class
  * This class is used to handle PayPal API related operations
- * @author    CodexWorld.com
- * @url        http://www.codexworld.com
- * @license    http://www.codexworld.com/license
+ * @author    
+ * @url        
+ * @license    
  */
 class PaypalExpress{
     public $paypalEnv       = 'sandbox'; // Or 'production'
     public $paypalURL       = 'https://api.sandbox.paypal.com/v1/';
-    public $paypalClientID  = 'AUySNaYXSofBPgW0t_0eTHCcjvWXs3vITinLL333MBsg3X2vQ0KEa7LJsONnVELs_SPAJOkeKL21eyvd';
-    private $paypalSecret   = 'EJ2gtLfcYH7kwvbfL1PTmsadfZeU8eG2iNvytPZjq4fSQ9IJXSRA1AIGdJYZOa3NMFUFDTv3oqJaBzPw';
+    public $paypalClientID  = 'Put Here Your client ID';
+    private $paypalSecret   = 'Put Here Your Secret ID';
     
     public function validate($paymentID, $paymentToken, $payerID, $productID){
         $ch = curl_init();
